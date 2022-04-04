@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row, Button } from 'react-bootstrap';
+import { Col, Container, Row, Button, Table } from 'react-bootstrap';
 import './Home.css';
 import useReviews from '../../hook/useReviews';
 import SingleReview from '../SingleReview/SingleReview';
@@ -13,9 +13,9 @@ const Home = () => {
         torque: '165 Nm',
         power: '322 bhp',
         img: 'https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r.png',
-        img2:'https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r-2.jpg'
+        img2: 'https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r-2.jpg'
     }
-    const { name, description, cc, torque, power, img } = bikeInfo;
+    const { name, description, cc, torque, power, img, img2 } = bikeInfo;
 
     const [reviews, setReviews] = useReviews();
     const newData = reviews.slice(0, 3);
@@ -23,6 +23,7 @@ const Home = () => {
     const navigate = useNavigate();
     return (
         <>
+            {/* Hero Section */}
             <div className='hero-area'>
                 <Container>
                     <Row className='align-items-center'>
@@ -61,6 +62,7 @@ const Home = () => {
                 </Container>
             </div>
 
+            {/* Review section */}
             <div className='review-section py-5'>
                 <h2 className='text-center mb-5'>Customer Reviews</h2>
                 <Container>
@@ -74,12 +76,74 @@ const Home = () => {
                     </div>
                 </Container>
             </div>
-            <div>
-                <Container>
-                    <h2>Ninja H2R Spec</h2>
+
+            {/* bike specification section */}
+            <div className='bike-spec py-5'>
+                <Container className='bike-spec py-5'>
+                    <h2 className="text-center mb-5">Ninja H2R Spec</h2>
                     <Row>
-                        <Col sm='12' md='6'><img src='' alt="" /></Col>
-                        <Col sm='12' md='6'></Col>
+                        <Col sm='12' md='6'>
+                            <img className='img-fluid p-5' src={img2} alt="ninja-spec" />
+                        </Col>
+                        <Col sm='12' md='6'>
+                            <h2 style={{color:"#47c335"}}>Ninja H2R Spec</h2>
+                            <div>
+                                <Table className='table-borderless'>
+                                    <tr>
+                                        <td>Engine:</td>
+                                        <td>4-stroke,16-valve</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Displacement:</td>
+                                        <td>998cc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Torque:</td>
+                                        <td>121.5 lb-ft @ 12,500 rpm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ignition:</td>
+                                        <td>Digital</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Front Tire:</td>
+                                        <td>120/60 ZR17 V01F slick</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rear Tire:</td>
+                                        <td>190/65 17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rear Brakes:</td>
+                                        <td>single 250mm disc, KIBS ABS</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Frame Type</td>
+                                        <td>Trellis, high-tensile steel</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Length</td>
+                                        <td>81.5 in</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Width</td>
+                                        <td>33.5 in</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Height</td>
+                                        <td>45.7 in</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Curb Weight</td>
+                                        <td>476.3 lb*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fuel Capacity</td>
+                                        <td>4.5 gal</td>
+                                    </tr>
+                                </Table>
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
             </div>
