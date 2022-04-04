@@ -28,7 +28,10 @@ const Home = () => {
                         <Col ms='12' md='6'>
                             <h2 className='hero-text'>{name.slice(0, 8)} <span className='second-txt'>{name.slice(8)}</span></h2>
                             <p>{description}</p>
-                            <Button variant='' className="pm-btn px-4 py-2 mt-3">Order Now</Button>
+                            <div>
+                                <Button variant='' className="pm-btn px-4 py-2 mt-3 me-3">Order Now</Button>
+                                <Button variant='' className="pm-btn px-4 py-2 mt-3">Showrooms</Button>
+                            </div>
                             <Row className="mt-5 info-text">
                                 <Col>
                                     <div className='text-left'>
@@ -66,7 +69,7 @@ const Home = () => {
                         }
                     </Row>
                     <div className='d-flex justify-content-center'>
-                        <Button onClick={()=>navigate('/reviews')} className="pm-btn border-0 px-4 py-2    ">See All Reviews</Button>
+                        <Button onClick={() => navigate('/reviews')} className="pm-btn border-0 px-4 py-2    ">See All Reviews</Button>
                     </div>
                 </Container>
             </div>

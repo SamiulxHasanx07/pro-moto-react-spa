@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div style={{minHeight:"90vh"}}>
             <Container>
-                <h2 className='text-center'>About Page</h2>
+                <h2 className='text-center mt-5'>About Page</h2>
             </Container>
         </div>
     );

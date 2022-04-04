@@ -17,11 +17,27 @@
     margin-right: 0;
 }
 .nav-link a:hover{
+    border-radius: 2px;
     background: #47c335;
     color: #fff;
 }
 .nav-link a.active{
+    border-radius: 2px;
     background: #47c335;
     color: #fff;
 }
+.navbar-toggler{
+    color: #47c335 !important;
+    background-color: #fff !important;
+    padding: 5px 13px;
+}
 
+@media (max-width: 600px) {
+    .navbar {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 111111;
+    }
+ }
