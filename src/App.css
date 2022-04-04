@@ -11,3 +11,6 @@
 .app{
   min-height: 100vh;
 }
+h2{
+  font-weight: 700 !important;
+}
