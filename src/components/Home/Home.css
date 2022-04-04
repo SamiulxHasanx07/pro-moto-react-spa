@@ -1,9 +1,21 @@
 .hero-area{
-    padding: 100px 0;
-    background: rgb(255, 255, 255);
+    padding: 140px 0;
 }
 .hero-text{
     font-size: 50px;
     font-weight: 700;
 
+}
+
+.second-txt{
+    color: #47c335;
+}
+
+.info-text h4{
+    color: #47c335;
+}
+
+.pm-btn{
+    color: #fff !important;
+    background-color: #47c335 !important;
 }

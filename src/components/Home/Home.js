@@ -1,24 +1,64 @@
-
-import { Button } from 'bootstrap';
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import './Home.css';
+import Reviews from '../Reviews/Reviews';
 const Home = () => {
+    // fake data
+    const bikeInfo = {
+        name: 'Kawasaki Ninja H2R',
+        description: 'The development of the Ninja H2®R motorcycle goes beyond the boundaries of any other Kawasaki motorcycle. Born through the unprecedented collaboration between multiple divisions within the Kawasaki Heavy Industries, Ltd.',
+        cc: '998cc',
+        torque: '165 Nm',
+        power: '322 bhp',
+        img: 'https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r.png'
+    }
+    const { name, description, cc, torque, power, img } = bikeInfo;
+
     return (
-        <div className='hero-area'>
-            <Container>
-                <Row className='align-items-center'>
-                    <Col ms='6'>
-                        <h2 className='hero-text'>Kawasaki Ninja H2R</h2>
-                        <p>The development of the Ninja H2®R motorcycle goes beyond the boundaries of any other Kawasaki motorcycle. Born through the unprecedented collaboration between multiple divisions within the Kawasaki Heavy Industries, Ltd.</p>
-                        <button>Pre Order Now</button>
-                    </Col>
-                    <Col ms='6'>
-                        <img className='img-fluid' src='./images/kawasaki-h2r.png' alt="" />
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+        <>
+            <div className='hero-area'>
+                <Container>
+                    <Row className='align-items-center'>
+                        <Col ms='6'>
+                            <h2 className='hero-text'>{name.slice(0, 8)} <span className='second-txt'>{name.slice(8)}</span></h2>
+                            <p>{description}</p>
+                            <Button variant='' className="pm-btn px-3 py-2">Order Now</Button>
+                            <Row className="mt-5 info-text">
+                                <Col>
+                                    <div className='text-left'>
+                                        <h4>{cc}</h4>
+                                        <p >Engine CC</p>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className='text-left'>
+                                        <h4>{torque}</h4>
+                                        <p >Torque</p>
+                                    </div>
+                                </Col>
+                                <Col>
+                                    <div className='text-left'>
+                                        <h4>{power}</h4>
+                                        <p>Power</p>
+                                    </div>
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col ms='6'>
+                            <img className='img-fluid' src={img} alt="" />
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            <div>
+                <h2 className='text-center'>Customer Reviews</h2>
+                <Container>
+
+                    <Reviews></Reviews>
+                </Container>
+            </div>
+        </>
     );
 };
 
