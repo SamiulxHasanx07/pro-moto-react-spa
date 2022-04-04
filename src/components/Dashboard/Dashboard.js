@@ -1,11 +1,12 @@
 import React from 'react';
+import Charts from '../Charts/Charts';
 
 const Dashboard = () => {
-    return (
-        <div>
-            <h2>Dashboard</h2>
-        </div>
-    );
+  return (
+    <div>
+      <Charts></Charts>
+    </div>
+  );
 };
 
 export default Dashboard;

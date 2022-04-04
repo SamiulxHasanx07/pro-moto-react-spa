@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
 import './Home.css';
-import Reviews from '../Reviews/Reviews';
 import useReviews from '../../hook/useReviews';
 import SingleReview from '../SingleReview/SingleReview';
+import { useNavigate } from "react-router-dom";
 const Home = () => {
     // fake data
     const bikeInfo = {
@@ -18,12 +18,14 @@ const Home = () => {
 
     const [reviews, setReviews] = useReviews();
     const newData = reviews.slice(0, 3);
+
+    const navigate = useNavigate();
     return (
         <>
             <div className='hero-area'>
                 <Container>
                     <Row className='align-items-center'>
-                        <Col ms='6'>
+                        <Col ms='12' md='6'>
                             <h2 className='hero-text'>{name.slice(0, 8)} <span className='second-txt'>{name.slice(8)}</span></h2>
                             <p>{description}</p>
                             <Button variant='' className="pm-btn px-4 py-2 mt-3">Order Now</Button>
@@ -48,7 +50,7 @@ const Home = () => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col ms='6'>
+                        <Col ms='12' md='6'>
                             <img className='img-fluid' src={img} alt="" />
                         </Col>
                     </Row>
@@ -63,6 +65,9 @@ const Home = () => {
                             newData.map(review => <SingleReview key={review._id} review={review}></SingleReview>)
                         }
                     </Row>
+                    <div className='d-flex justify-content-center'>
+                        <Button onClick={()=>navigate('/reviews')} className="pm-btn border-0 px-4 py-2    ">See All Reviews</Button>
+                    </div>
                 </Container>
             </div>
         </>
