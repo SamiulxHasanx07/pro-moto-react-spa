@@ -23,7 +23,6 @@ const Home = () => {
     const navigate = useNavigate();
     return (
         <>
-            {/* Hero Section */}
             <div className='hero-area'>
                 <Container>
                     <Row className='align-items-center'>

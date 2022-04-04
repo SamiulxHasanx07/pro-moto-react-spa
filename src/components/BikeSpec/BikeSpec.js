@@ -4,7 +4,7 @@ import { Col, Container, Row, Table } from 'react-bootstrap';
 const BikeSpec = () => {
     const img ='https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r-2.jpg';
     return (
-        <div div className= 'bike-spec py-5' >
+        <div className= 'bike-spec py-5'>
             <Container className='bike-spec py-5'>
                 <h2 className="text-center mb-5">Ninja H2R Spec</h2>
                 <Row>
@@ -15,6 +15,8 @@ const BikeSpec = () => {
                         <h2 style={{ color: "#47c335" }}>Ninja H2R Spec</h2>
                         <div>
                             <Table className='table-borderless'>
+                                <tbody>
+
                                 <tr>
                                     <td>Engine:</td>
                                     <td>4-stroke,16-valve</td>
@@ -67,6 +69,7 @@ const BikeSpec = () => {
                                     <td>Fuel Capacity</td>
                                     <td>4.5 gal</td>
                                 </tr>
+                                </tbody>
                             </Table>
                         </div>
                     </Col>

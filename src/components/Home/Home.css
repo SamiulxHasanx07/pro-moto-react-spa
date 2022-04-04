@@ -40,4 +40,8 @@
     .review-section {
         overflow: hidden;
     }
- }
+}
+td {
+    padding: 3px 0px !important;
+}
+
