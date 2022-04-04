@@ -12,7 +12,8 @@ const Home = () => {
         cc: '998cc',
         torque: '165 Nm',
         power: '322 bhp',
-        img: 'https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r.png'
+        img: 'https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r.png',
+        img2:'https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/kawasaki-h2r-2.jpg'
     }
     const { name, description, cc, torque, power, img } = bikeInfo;
 
@@ -71,6 +72,15 @@ const Home = () => {
                     <div className='d-flex justify-content-center'>
                         <Button onClick={() => navigate('/reviews')} className="pm-btn border-0 px-4 py-2    ">See All Reviews</Button>
                     </div>
+                </Container>
+            </div>
+            <div>
+                <Container>
+                    <h2>Ninja H2R Spec</h2>
+                    <Row>
+                        <Col sm='12' md='6'><img src='' alt="" /></Col>
+                        <Col sm='12' md='6'></Col>
+                    </Row>
                 </Container>
             </div>
         </>

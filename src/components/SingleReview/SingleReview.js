@@ -5,7 +5,7 @@ import { Card, Col } from 'react-bootstrap';
 import './SingleReview.css';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 const SingleReview = ({ review }) => {
-    const { image, name, rating, user_review, user, _id } = review;
+    const { image, name, rating, user_review } = review;
     return (
         <>
             <Col>
@@ -27,7 +27,7 @@ const SingleReview = ({ review }) => {
 
                         <Card.Text>
                             <q>
-                                {user_review}
+                                {user_review.slice(0,150)}
                             </q>
                         </Card.Text>
                     </Card.Body>
