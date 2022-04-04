@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
-
-
 const Charts = () => {
     const [chartData, setChartData] = useState([]);
     useEffect(() => {
@@ -12,7 +10,6 @@ const Charts = () => {
             .then(res => res.json())
             .then(data => setChartData(data))
     }, [])
-    console.log(chartData);
     return (
         <>
             <Container className='py-5'>

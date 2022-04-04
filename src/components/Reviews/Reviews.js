@@ -4,7 +4,7 @@ import SingleReview from "../SingleReview/SingleReview";
 import './Reviews.css';
 const Reviews = () => {
 
-    const [reviews, setReviews] = useReviews();
+    const [reviews] = useReviews();
     return (
         <div className="all-reviews py-5">
             <h2 className='text-center mb-5'>Customer Reviews</h2>

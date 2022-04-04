@@ -1,0 +1,14 @@
+.blogs .card .card-title{
+    color: #2db219;
+}
+.blogs .card .card-subtitle{
+    color: #2db219;
+}
+.blogs .card{
+    width: 75%;
+}
+@media (max-width: 600px) {
+    .blogs .card{
+        width: 100%;
+    }
+ }
