@@ -1,0 +1,50 @@
+[
+    {
+      "_id": "624a3b03c2dce29d8643b02c",
+      "image": "https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/users/user-1.jpg",
+      "user": "henry154",
+      "name": "Henry Davis",
+      "rating": 3.0,
+      "user_review": "I bought this vehicle just one month back and I had already driven more than 3000 kms on it. Driving a Kawasaki Ninja ZX-14R is really awesome."
+    },
+    {
+      "_id": "624a3b03049c4e83972b0162",
+      "image": "https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/users/user-2.jpg",
+      "user": "nelson_144",
+      "name": "Winston Nelson",
+      "rating": 3.6,
+      "user_review": "I bought this vehicle just one month back and I had already driven more than 3000 kms on it. Driving a Kawasaki Ninja ZX-14R is really awesome."
+    },
+    {
+      "_id": "624a3b038456ef3fc79ea4cd",
+      "image": "https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/users/user-3.jpg",
+      "user": "santora_22",
+      "name": "Lauren Santora",
+      "rating": 4.5,
+      "user_review": "I bought this vehicle just one month back and I had already driven more than 3000 kms on it. Driving a Kawasaki Ninja ZX-14R is really awesome."
+    },
+    {
+      "_id": "624a3b03955a45db5837bd06",
+      "image": "https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/users/user-4.jpg",
+      "user": "yin1988",
+      "name": "Kerry Yin",
+      "rating": 2.5,
+      "user_review": "I bought this vehicle just one month back and I had already driven more than 3000 kms on it. Driving a Kawasaki Ninja ZX-14R is really awesome."
+    },
+    {
+      "_id": "624a3b03bc3d0212f0d02109",
+      "image": "https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/users/user-5.jpg",
+      "user": "joseph_king",
+      "name": "Joseph Manuel",
+      "rating": 3.0,
+      "user_review": "I bought this vehicle just one month back and I had already driven more than 3000 kms on it. Driving a Kawasaki Ninja ZX-14R is really awesome."
+    },
+    {
+      "_id": "624a3b035daca55623e2bd60",
+      "image": "https://raw.githubusercontent.com/SamiulxHasanx07/pro-moto-fake-data/main/users/user-6.jpg",
+      "user": "erin_ifo54",
+      "name": "Erin Vann",
+      "rating": 5.0,
+      "user_review": "I bought this vehicle just one month back and I had already driven more than 3000 kms on it. Driving a Kawasaki Ninja ZX-14R is really awesome."
+    }
+  ]
