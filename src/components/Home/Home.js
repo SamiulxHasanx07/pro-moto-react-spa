@@ -65,7 +65,7 @@ const Home = () => {
             <div className='review-section py-5'>
                 <h2 className='text-center mb-5'>Customer Reviews</h2>
                 <Container>
-                    <Row xs={1} md={3} className="g-5 mb-5">
+                    <Row xs={1} md={2} lg={3} className="g-5 mb-5">
                         {
                             newData.map(review => <SingleReview key={review._id} review={review}></SingleReview>)
                         }

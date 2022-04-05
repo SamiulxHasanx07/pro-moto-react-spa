@@ -26,7 +26,7 @@ const Blogs = () => {
 
                 <Card className='mt-4 border-0 mx-auto'>
                     <Card.Body>
-                        <Card.Title>What is Symantic tags?</Card.Title>
+                        <Card.Title>Difference Between Inline, Block, Inline-block Elements?</Card.Title>
                         <Row>
                             <Col sm='12' md='4'>
                                 <Card.Subtitle className="my-2">Block Element</Card.Subtitle>
