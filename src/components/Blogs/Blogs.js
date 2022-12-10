@@ -4,7 +4,7 @@ import './Blogs.css';
 const Blogs = () => {
     return (
         <div className='blogs'>
-
+        {/*
             <Container className='py-5'>
                 <h2 className='mb-4 text-center'>Question Ans:</h2>
                 <Card className='border-0 mx-auto'>
@@ -63,6 +63,7 @@ const Blogs = () => {
                     </Card.Body>
                 </Card>
             </Container>
+            */}
         </div>
     );
 };
